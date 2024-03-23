@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StateForm from './components/StateForm';
 import StateTodo from './components/StateTodo';
+import FormBasic from './components/FormBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateTodo />
+    <FormBasic />
   </React.StrictMode>
 );
 

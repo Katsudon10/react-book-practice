@@ -24,7 +24,8 @@ const schema = yup.object({
         .string()
         .label('名前')
         .required('${label}は必須です')
-        .max(20,'${label}は20文字以内で入力してください'),
+        .max(20,'${label}は20文字以内で入力してください')
+        .trim().lowercase(),
 
     gender : yup
         .string()

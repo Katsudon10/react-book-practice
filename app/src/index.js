@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import StateForm from './components/StateForm';
 import StateTodo from './components/StateTodo';
 import FormBasic from './components/FormBasic';
+import FormYup from './components/FormYup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormBasic />
+    <FormYup />
   </React.StrictMode>
 );
 

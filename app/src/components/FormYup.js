@@ -22,6 +22,19 @@ const schema = yup.object({
         .label('メモ')
         .required('${label}は必須です')
         .min(10,'${label}は10文字以上で入力してください')
+        .test('ng',
+            ({ label }) => `${label}にNGワードが含まれています`,
+            value => {
+                const ngs = ['暴力','殺人','戦争'];
+
+                for (const ng of ngs) {
+                    if (value.includes(ng)) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        )
 });
 
 export default function FormYup() {

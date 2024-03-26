@@ -7,11 +7,12 @@ import StateForm from './components/StateForm';
 import StateTodo from './components/StateTodo';
 import FormBasic from './components/FormBasic';
 import FormYup from './components/FormYup';
+import LazyBasic from './components/LazyBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormYup />
+    <LazyBasic />
   </React.StrictMode>
 );
 

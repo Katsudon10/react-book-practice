@@ -8,11 +8,13 @@ import StateTodo from './components/StateTodo';
 import FormBasic from './components/FormBasic';
 import FormYup from './components/FormYup';
 import LazyBasic from './components/LazyBasic';
+import SuspenseSimple from './components/SuspenseSimple';
+import SuspenseResult from './components/SuspenseResult';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LazyBasic />
+    <SuspenseResult />
   </React.StrictMode>
 );
 

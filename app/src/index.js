@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -10,11 +10,12 @@ import FormYup from './components/FormYup';
 import LazyBasic from './components/LazyBasic';
 import SuspenseSimple from './components/SuspenseSimple';
 import SuspenseResult from './components/SuspenseResult';
+import ProfilerBasic from './components/ProfilerBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SuspenseResult />
+    <ProfilerBasic />
   </React.StrictMode>
 );
 

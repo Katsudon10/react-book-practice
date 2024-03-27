@@ -11,11 +11,12 @@ import LazyBasic from './components/LazyBasic';
 import SuspenseSimple from './components/SuspenseSimple';
 import SuspenseResult from './components/SuspenseResult';
 import ProfilerBasic from './components/ProfilerBasic';
+import StyledBasic from './components/StyledBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ProfilerBasic />
+    <StyledBasic />
   </React.StrictMode>
 );
 

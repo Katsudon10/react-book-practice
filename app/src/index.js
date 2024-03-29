@@ -12,11 +12,16 @@ import SuspenseSimple from './components/SuspenseSimple';
 import SuspenseResult from './components/SuspenseResult';
 import ProfilerBasic from './components/ProfilerBasic';
 import StyledBasic from './components/StyledBasic';
+import StyledComp from './components/StyledComp';
+import { MyButton, MyStyledButton } from './components/StyleComp2';
+import StyledCommon from './components/StyledCommon';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyledBasic />
+    <>
+      <StyledCommon />
+    </>
   </React.StrictMode>
 );
 

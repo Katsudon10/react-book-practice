@@ -17,13 +17,12 @@ import { MyButton, MyStyledButton } from './components/StyleComp2';
 import StyledCommon from './components/StyledCommon';
 import GlobalStyle from './components/StyleGlobal';
 import StyledProps from './components/StyledProps';
+import EmotionJsx from './components/EmotionJsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
-      <StyledProps />
-    </>
+    <EmotionJsx />
   </React.StrictMode>
 );
 

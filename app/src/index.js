@@ -16,13 +16,13 @@ import StyledComp from './components/StyledComp';
 import { MyButton, MyStyledButton } from './components/StyleComp2';
 import StyledCommon from './components/StyledCommon';
 import GlobalStyle from './components/StyleGlobal';
+import StyledProps from './components/StyledProps';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      <GlobalStyle />
-      <StyledCommon />
+      <StyledProps />
     </>
   </React.StrictMode>
 );

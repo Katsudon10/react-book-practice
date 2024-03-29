@@ -18,22 +18,14 @@ import StyledCommon from './components/StyledCommon';
 import GlobalStyle from './components/StyleGlobal';
 import StyledProps from './components/StyledProps';
 import EmotionJsx from './components/EmotionJsx';
-
-/** @jsxImportSourse @emotion/react */
-import { css, Global } from '@emotion/react';
-
-const global = css`
-  body {
-    background-color: yellow;
-  }
-`;
+import PortalBasic from './components/PortalBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      <Global styles={global} />
-      <EmotionJsx />
+      <div id='dialog'></div>
+      <PortalBasic />
     </>
   </React.StrictMode>
 );

@@ -19,10 +19,22 @@ import GlobalStyle from './components/StyleGlobal';
 import StyledProps from './components/StyledProps';
 import EmotionJsx from './components/EmotionJsx';
 
+/** @jsxImportSourse @emotion/react */
+import { css, Global } from '@emotion/react';
+
+const global = css`
+  body {
+    background-color: yellow;
+  }
+`;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EmotionJsx />
+    <>
+      <Global styles={global} />
+      <EmotionJsx />
+    </>
   </React.StrictMode>
 );
 

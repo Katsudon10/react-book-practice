@@ -22,11 +22,12 @@ import PortalBasic from './components/PortalBasic';
 import ErrorRoot from './components/ErrorRoot';
 import ErrorRetryThrow from './components/ErrorRetryThrow';
 import ErrorRetryRoot from './components/ErrorRetryRoot';
+import MaterialBasic from './components/MaterialBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ErrorRetryRoot />
+    <MaterialBasic />
   </React.StrictMode>
 );
 

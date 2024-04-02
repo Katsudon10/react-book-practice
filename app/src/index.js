@@ -26,10 +26,16 @@ import MaterialBasic from './components/MaterialBasic';
 import MaterialDrawer from './components/MaterialDrawer';
 import MaterialGrid from './components/MaterialGrid';
 
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import theme from './components/theme';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MaterialGrid />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <MaterialBasic />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

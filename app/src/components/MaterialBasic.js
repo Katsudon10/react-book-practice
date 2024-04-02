@@ -8,9 +8,9 @@ export default function MaterialBasic() {
     `;
     return (
         <>
-            <Button variant='text' color='secondary' css={font}>Text</Button>
+            <Button variant='text' css={font}>Text</Button>
             <Button variant='contained' color='success'>Contained</Button>
-            <Button variant='outlined' color='warning'>Outlined</Button>
+            <Button variant='outlined' color='secondary'>Outlined</Button>
         </>
     );
 }

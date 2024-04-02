@@ -20,11 +20,13 @@ import StyledProps from './components/StyledProps';
 import EmotionJsx from './components/EmotionJsx';
 import PortalBasic from './components/PortalBasic';
 import ErrorRoot from './components/ErrorRoot';
+import ErrorRetryThrow from './components/ErrorRetryThrow';
+import ErrorRetryRoot from './components/ErrorRetryRoot';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ErrorRoot />
+    <ErrorRetryRoot />
   </React.StrictMode>
 );
 

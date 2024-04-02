@@ -24,11 +24,12 @@ import ErrorRetryThrow from './components/ErrorRetryThrow';
 import ErrorRetryRoot from './components/ErrorRetryRoot';
 import MaterialBasic from './components/MaterialBasic';
 import MaterialDrawer from './components/MaterialDrawer';
+import MaterialGrid from './components/MaterialGrid';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MaterialDrawer />
+    <MaterialGrid />
   </React.StrictMode>
 );
 

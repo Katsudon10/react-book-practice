@@ -70,7 +70,7 @@ export default function FormMui() {
                     error={'memo' in errors}
                     helperText={errors.memo?.message} />
             </div>
-            <div>'
+            <div>
                 <Button type='submit' variant='contained'>送信</Button>
             </div>
         </form>

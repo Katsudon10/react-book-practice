@@ -34,14 +34,30 @@ import QueryPre from './components/QueryPre';
 
 import { Query, QueryClient, QueryClientProvider } from 'react-query';
 import QueryBasic from './components/QueryBasic';
+import { Suspense } from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
+import QuerySuspense from './components/QuerySuspense';
 
+const cli = new QueryClient(
+  {
+    defaultOptions: {
+      queries: {
+        suspense: true,
+      },
+    },
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <QueryClientProvider client={new QueryClient()}>
-      <QueryBasic />
-    </QueryClientProvider>
+    <Suspense fallback={<div>loading...</div>}>
+      <ErrorBoundary failback={<div>error...</div>}>
+        <QueryClientProvider client={cli}>
+          <QuerySuspense />
+        </QueryClientProvider>
+      </ErrorBoundary>
+    </Suspense>
   </React.StrictMode>
 );
 

@@ -32,10 +32,16 @@ import MaterialMode from './components/MaterialMode';
 import FormMui from './components/FormMui';
 import QueryPre from './components/QueryPre';
 
+import { Query, QueryClient, QueryClientProvider } from 'react-query';
+import QueryBasic from './components/QueryBasic';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <QueryPre />
+    <QueryClientProvider client={new QueryClient()}>
+      <QueryBasic />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

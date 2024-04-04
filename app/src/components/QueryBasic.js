@@ -4,8 +4,8 @@ const sleep = delay => new Promise(resolve => setTimeout(resolve, delay));
 
 const fetchWeather = async () => {
     await sleep(2000);
-    // const key = process.env.REACT_APP_WEATHER_API_KEY;
-    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Tokyo&lang=ja&appid=867a3d66de3ea5e76ffb540799705698`);
+    const key = process.env.REACT_APP_WEATHER_API_KEY;
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Tokyo&lang=ja&appid=${key}`);
     if (res.ok) { return res.json(); }
     throw new Error(res.statusText);
 }

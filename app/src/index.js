@@ -30,11 +30,12 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from './components/theme';
 import MaterialMode from './components/MaterialMode';
 import FormMui from './components/FormMui';
+import QueryPre from './components/QueryPre';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormMui />
+    <QueryPre />
   </React.StrictMode>
 );
 

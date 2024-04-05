@@ -47,11 +47,16 @@ import HookCallbackRef from './components/HookCallbackRef';
 import HookReducer from './components/HookReducer';
 import HookReducerUp from './components/HookReducerUp';
 import HookReducerInit from './components/HookReducerInit';
+import HookContext from './components/HookContext';
+import MyThemeProvider from './components/MyThemeProvider';
+import HookThemeButton from './components/HookThemeButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookReducerInit init={0} />
+    <MyThemeProvider>
+      <HookThemeButton />
+    </MyThemeProvider>
   </React.StrictMode>
 );
 

@@ -40,11 +40,15 @@ import QuerySuspense from './components/QuerySuspense';
 import StateEffect from './components/StateEffect';
 import HookTimer from './components/HookTimer';
 import HookEffect from './components/HookEffect';
+import HookRefNg from './components/HookRefNg';
+import HookRef from './components/HookRef';
+import HookRefForward from './components/HookRefForward';
+import HookCallbackRef from './components/HookCallbackRef';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookEffect init={10} />
+    <HookCallbackRef />
   </React.StrictMode>
 );
 

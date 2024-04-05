@@ -44,11 +44,14 @@ import HookRefNg from './components/HookRefNg';
 import HookRef from './components/HookRef';
 import HookRefForward from './components/HookRefForward';
 import HookCallbackRef from './components/HookCallbackRef';
+import HookReducer from './components/HookReducer';
+import HookReducerUp from './components/HookReducerUp';
+import HookReducerInit from './components/HookReducerInit';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookCallbackRef />
+    <HookReducerInit init={0} />
   </React.StrictMode>
 );
 

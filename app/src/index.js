@@ -37,27 +37,14 @@ import QueryBasic from './components/QueryBasic';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import QuerySuspense from './components/QuerySuspense';
-
-const cli = new QueryClient(
-  {
-    defaultOptions: {
-      queries: {
-        suspense: true,
-      },
-    },
-  }
-);
+import StateEffect from './components/StateEffect';
+import HookTimer from './components/HookTimer';
+import HookEffect from './components/HookEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div>loading...</div>}>
-      <ErrorBoundary failback={<div>error...</div>}>
-        <QueryClientProvider client={cli}>
-          <QuerySuspense />
-        </QueryClientProvider>
-      </ErrorBoundary>
-    </Suspense>
+    <HookEffect init={10} />
   </React.StrictMode>
 );
 

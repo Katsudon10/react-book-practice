@@ -51,12 +51,16 @@ import HookContext from './components/HookContext';
 import MyThemeProvider from './components/MyThemeProvider';
 import HookThemeButton from './components/HookThemeButton';
 
+import { RecoilRoot } from 'recoil';
+import RecoilCounter from './components/RecoilCounter';
+import RecoilTodo from './components/RecoilTodo';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyThemeProvider>
-      <HookThemeButton />
-    </MyThemeProvider>
+    <RecoilRoot>
+      <RecoilTodo />
+    </RecoilRoot>
   </React.StrictMode>
 );
 

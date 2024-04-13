@@ -55,11 +55,12 @@ import { RecoilRoot } from 'recoil';
 import RecoilCounter from './components/RecoilCounter';
 import RecoilTodo from './components/RecoilTodo';
 import HookMemo from './components/HookMemo';
+import HookTransition from './components/HookTransition';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookMemo />
+    <HookTransition />
   </React.StrictMode>
 );
 

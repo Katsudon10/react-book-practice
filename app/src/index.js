@@ -58,11 +58,12 @@ import HookMemo from './components/HookMemo';
 import HookTransition from './components/HookTransition';
 import HookDeferred from './components/HookDiferred';
 import HookDeferredTransition from './components/HookDeferredTransition';
+import HookCustom from './components/HookCustom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookDeferredTransition />
+    <HookCustom />
   </React.StrictMode>
 );
 

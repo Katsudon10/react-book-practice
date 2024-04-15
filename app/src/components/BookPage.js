@@ -3,13 +3,13 @@ import MyHeader from './MyHeader';
 // import books from '../chap07/books';
 
 export default function BookPage() {
-  const params = useParams();
-  return <p>ISBNコード「{params.isbn}」のページです。</p>;
+//   const params = useParams();
+//   return <p>ISBNコード「{params.isbn}」のページです。</p>;
 
   // 分割代入
-  // const { isbn } = useParams();
+  const { isbn } = useParams();
 //   const { isbn = '978-4-8156-0182-9' } = useParams();
-//   return <p>ISBNコード「{isbn}」のページです。</p>;
+  return <p>ISBNコード「{isbn}」のページです。</p>;
 
   // MyHeader コンポーネントを適用
   // const { isbn = '978-4-8156-0182-9' } = useParams();

@@ -62,11 +62,12 @@ import HookCustom from './components/HookCustom';
 
 import { RouterProvider } from 'react-router-dom';
 import routesBasic from './components/routesBasic';
+import routesLink from './components/routesLink';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={routesBasic} /> 
+    <RouterProvider router={routesLink} /> 
   </React.StrictMode>
 );
 

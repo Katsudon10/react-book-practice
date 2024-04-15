@@ -60,10 +60,13 @@ import HookDeferred from './components/HookDiferred';
 import HookDeferredTransition from './components/HookDeferredTransition';
 import HookCustom from './components/HookCustom';
 
+import { RouterProvider } from 'react-router-dom';
+import routesBasic from './components/routesBasic';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookCustom />
+    <RouterProvider router={routesBasic} /> 
   </React.StrictMode>
 );
 

@@ -12,7 +12,7 @@ export default function RouterNav() {
             <ul>
                 <li><NavLink style={isCurrent} to="/">Home</NavLink></li>
                 <li><NavLink style={isCurrent} to="/article">Article</NavLink></li>
-                <li><NavLink style={isCurrent} to="/about">About</NavLink></li>
+                <li><NavLink style={isCurrent} to="/about" replace>About</NavLink></li>
             </ul>
             <hr />
             <Outlet />

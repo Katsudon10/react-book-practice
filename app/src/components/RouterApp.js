@@ -7,6 +7,7 @@ export default function RouterApp() {
                 <li><Link to="/">Top</Link></li>
                 <li><Link to="/article">Article</Link></li>
                 <li><Link to="/about">About</Link></li>
+                <li><Link to="/article/info">Info</Link></li>
             </ul>
 
             <hr />

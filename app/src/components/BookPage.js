@@ -7,8 +7,8 @@ export default function BookPage() {
 //   return <p>ISBNコード「{params.isbn}」のページです。</p>;
 
   // 分割代入
-  const { isbn } = useParams();
-//   const { isbn = '978-4-8156-0182-9' } = useParams();
+//   const { isbn } = useParams();
+  const { isbn = '978-4-8156-0182-9' } = useParams();
   return <p>ISBNコード「{isbn}」のページです。</p>;
 
   // MyHeader コンポーネントを適用

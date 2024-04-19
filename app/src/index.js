@@ -65,10 +65,15 @@ import routesBasic from './components/routesBasic';
 import routesLink from './components/routesLink';
 import routesParam from './components/routesParam';
 
+import { HelmetProvider } from 'react-helmet-async';
+import routesHandle from './components/routesHandle';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={routesParam} /> 
+    <HelmetProvider>
+     <RouterProvider router={routesHandle} />
+    </HelmetProvider>
   </React.StrictMode>
 );
 

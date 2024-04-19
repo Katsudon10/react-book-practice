@@ -9,6 +9,9 @@ export default function BookPage() {
   // 分割代入
 //   const { isbn } = useParams();
   const { isbn = '978-4-8156-0182-9' } = useParams();
+  if (!/978-4-[0-9]{2,7}-[0-9]{2,7}-[0-9X]/.test(isbn)) {
+    throw new RangeError('ISBN is invalid!!');
+  }
 
   // MyHeader コンポーネントを適用
   // const { isbn = '978-4-8156-0182-9' } = useParams();

@@ -72,7 +72,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-     <RouterProvider router={routesHandle} />
+     <RouterProvider router={routesParam} />
     </HelmetProvider>
   </React.StrictMode>
 );

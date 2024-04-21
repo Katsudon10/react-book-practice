@@ -61,6 +61,10 @@ const routesParam = createBrowserRouter(
         <Route element={<RouterParam />} errorElement={<CommonErrorPage />}>
             <Route path="/" element={<TopPage />} />
             <Route path="/book/form" element={<BookFormPage />} action={bookAction} />
+            <Route path="/books" lazy={async () => {
+                const {BookDetailsPage} = await import('./BookNest');
+                return {Component: BookDetailsPage}
+            }}/>
             <Route path="/book/:isbn?" element={<BookPage />} />
             <Route path="/search/*" element={<SearchPage />} />
             <Route path="*" element={<NotFoundPage />} />
